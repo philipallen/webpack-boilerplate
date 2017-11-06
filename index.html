@@ -1,13 +1,35 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
 </head>
+
 <body>
-    <div class="content">
-        <h1>Eir Styleguide</h1>
+  <div class="container">
+    <h1 class="title">Eir Styleguide</h1>
+
+    <div class="expanded content">
+      <div class="small-4 large-4 columns side-nav">
+        <ul>
+          <li><a href="#">Headings</a></li>
+          <li><a href="#">Buttons</a></li>
+          <li><a href="#">Text</a></li>
+          <li><a href="#">Logos</a></li>
+          <li><a href="#">Brand Colours</a></li>
+        </ul>
+
+      </div>
+      <div class="small-8 large-8 columns">
+          <h1> Content goes here</h1>
+
+      </div>
     </div>
+  </div>
 </body>
+
 </html>

@@ -1,8 +1,7 @@
-// Apply a natural box layout model to all elements
-// but allowing components to change
-// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+// Add Foundation
 @import 'node_modules/foundation-sites/scss/foundation.scss';
 
+// Basic stuff
 html {
   box-sizing: border-box;
 }
@@ -10,4 +9,23 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+.title {
+  text-align: center;
+}
+
+.content {
+  margin-top: 3em;
+}
+
+.side-nav {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  max-width: 320px;
+}
+
+li {
+  list-style: none;
 }
