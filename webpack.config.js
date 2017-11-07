@@ -30,6 +30,8 @@ module.exports = {
     new webpack.ProvidePlugin({
       // lodash
       _: 'lodash',
+      $: "jquery",
+      jQuery: "jquery"
     }),
 
     new HtmlWebpackPlugin({
