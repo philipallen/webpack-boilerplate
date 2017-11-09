@@ -1,14 +1,11 @@
-// Foundation utilities
-@import "node_modules/foundation-sites/scss/foundation/functions";
+// Foundation styles
+@import '_settings.scss';
+@import '../../node_modules/foundation-sites/scss/foundation.scss';
 
-// eir stylesheets
-@import '_colours.scss';
+// eir styles
+@import '_fonts.scss';
 @import '_inputs.scss';
 @import '_buttons.scss';
-
-// Foundation stylesheets
-@import 'node_modules/foundation-sites/scss/foundation.scss';
-@import 'node_modules/foundation-sites/scss/normalize.scss';
 
 // Basic stuff
 html {
