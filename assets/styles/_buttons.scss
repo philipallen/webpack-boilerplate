@@ -1,45 +1,22 @@
-$color-blue: #00b5d5;
-$color-dark-blue: #005670;
-$color-red: #e40046;
-$color-dark-red:  #a5222a;
-$button-font-weight: bold;
+$button-font-med: rem-calc(20px);
+$button-med: rem-calc(16px);
+$button-lrg: rem-calc(26px);
+$button-font-lrg: rem-calc(28px);
+$button-bg-color: $blue;
+$button-bg-hover: $dark-blue;
+$button-display: block;
+$global-radius: 4px;
+$button-radius: $global-radius;
 
-.button {
-  border-radius: 4px;
-  font-size: 20px;
-  margin: 0;
-  padding: 16px;
-}
+.eir-button {
 
-.button-color {
-  background: $color-blue;
+  &.eir-button--red {
+    background-color: $red;
+    border-radius: 4px;
 
-  &:hover {
-    background: $color-dark-blue;
+    &:hover {
+      background-color: $dark-red;
+      border-radius: 4px;
+    }
   }
 }
-
-.button-size-large {
-  background: $color-red;
-  font-size: 28px;
-
-  &:hover {
-    background: $color-dark-red;
-  }
-}
-
-.button-size-medium {
-  background: $color-red;
-
-  &:hover {
-    background: $color-dark-red;
-  }
-}
-
-
-
-// .eir-button {
-//   @include button(
-//     $padding,
-//   );
-// }
