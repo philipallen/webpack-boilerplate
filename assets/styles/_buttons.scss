@@ -1,0 +1,45 @@
+$color-blue: #00b5d5;
+$color-dark-blue: #005670;
+$color-red: #e40046;
+$color-dark-red:  #a5222a;
+$button-font-weight: bold;
+
+.button {
+  border-radius: 4px;
+  font-size: 20px;
+  margin: 0;
+  padding: 16px;
+}
+
+.button-color {
+  background: $color-blue;
+
+  &:hover {
+    background: $color-dark-blue;
+  }
+}
+
+.button-size-large {
+  background: $color-red;
+  font-size: 28px;
+
+  &:hover {
+    background: $color-dark-red;
+  }
+}
+
+.button-size-medium {
+  background: $color-red;
+
+  &:hover {
+    background: $color-dark-red;
+  }
+}
+
+
+
+.eir-button {
+  @include button(
+    $padding,
+  );
+}

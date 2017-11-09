@@ -1,6 +1,10 @@
-// Add Foundation
+
 @import 'node_modules/foundation-sites/scss/foundation.scss';
-@import "node_modules/foundation-sites/scss/foundation/components/magellan";
+@import '_buttons.scss';
+
+// Add Foundation
+@import 'node_modules/foundation-sites/scss/normalize.scss';
+// @import "node_modules/foundation-sites/scss/foundation/components/magellan";
 
 // Basic stuff
 html {
