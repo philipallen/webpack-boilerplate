@@ -1,10 +1,14 @@
+// Foundation utilities
+@import "node_modules/foundation-sites/scss/foundation/functions";
 
-@import 'node_modules/foundation-sites/scss/foundation.scss';
+// eir stylesheets
+@import '_colours.scss';
+@import '_inputs.scss';
 @import '_buttons.scss';
 
-// Add Foundation
+// Foundation stylesheets
+@import 'node_modules/foundation-sites/scss/foundation.scss';
 @import 'node_modules/foundation-sites/scss/normalize.scss';
-// @import "node_modules/foundation-sites/scss/foundation/components/magellan";
 
 // Basic stuff
 html {
