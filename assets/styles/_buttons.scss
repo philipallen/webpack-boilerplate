@@ -1,22 +1,19 @@
-$button-font-med: rem-calc(20px);
-$button-med: rem-calc(16px);
-$button-lrg: rem-calc(26px);
-$button-font-lrg: rem-calc(28px);
-$button-bg-color: $blue;
-$button-bg-hover: $dark-blue;
-$button-display: block;
-$global-radius: 4px;
-$button-radius: $global-radius;
-
 .eir-button {
+  border-radius: 4px;
+
+  &.eir-button--blue {
+    background-color: $blue;
+
+    &:hover {
+      background-color: $dark-blue;
+    }
+  }
 
   &.eir-button--red {
     background-color: $red;
-    border-radius: 4px;
 
     &:hover {
       background-color: $dark-red;
-      border-radius: 4px;
     }
   }
 }
