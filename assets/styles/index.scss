@@ -6,6 +6,7 @@
 @import '_fonts.scss';
 @import '_inputs.scss';
 @import '_buttons.scss';
+@import '_accordions.scss';
 
 // Basic stuff
 html {
@@ -19,10 +20,6 @@ html {
 
 .title {
   text-align: center;
-}
-
-.content {
-  margin-top: 3em;
 }
 
 .side-nav {

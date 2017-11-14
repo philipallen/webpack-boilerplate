@@ -1,0 +1,22 @@
+.eir-accordion {
+    .accordion-navigation {
+        border-top: 3px dotted;
+    }
+
+    .content {
+        font-family: GT-Walsheim-Medium;
+        font-size: rem-calc(20);
+    }
+
+    .accordion-navigation > a {
+        padding: 0.8rem;
+    }
+
+    .accordion-navigation:last-child {
+        border-bottom: 3px dotted;
+    }
+
+    .accordion-navigation.active > a {
+        font-family: GT-Walsheim-Bold;
+    }
+}
