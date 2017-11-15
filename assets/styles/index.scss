@@ -6,11 +6,14 @@
 @import '_fonts.scss';
 @import '_inputs.scss';
 @import '_buttons.scss';
+@import '_banners.scss';
+@import '_dots.scss';
 
 // Basic stuff
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
