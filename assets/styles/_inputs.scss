@@ -1,6 +1,7 @@
 input[type='text'].eir-input {
   border-radius: 10px;
   height: 52px;
+  line-height: 52px;
 
   &.eir-input--blue:focus {
     border-color: $blue;

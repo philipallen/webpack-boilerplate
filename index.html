@@ -15,9 +15,40 @@
 
     <div data-magellan-expedition="fixed">
       <dl class="sub-nav">
+        <dd data-magellan-arrival="accordion"><a href="#accordion">Accordion</a></dd>
         <dd data-magellan-arrival="buttons"><a href="#buttons">Buttons</a></dd>
         <dd data-magellan-arrival="inputs"><a href="#inputs">Inputs</a></dd>
+        <dd data-magellan-arrival="inputs"><a href="#banners">Banners</a></dd>
       </dl>
+    </div>
+
+    <div class="panel">
+      <h3 data-magellan-destination="accordion">Accordion</h3>
+      <ul class="eir-accordion">
+        <li>
+          <ul class="accordion" data-accordion="myAccordionGroup">
+            <li class="accordion-navigation">
+              <a href="#panel1c">Accordion 1</a>
+              <div id="panel1c" class="content">
+                Panel 1. Lorem ipsum dolor
+              </div>
+            </li>
+            <li class="accordion-navigation">
+              <a href="#panel2c">Accordion 2</a>
+              <div id="panel2c" class="content">
+                Panel 2. Lorem ipsum dolor
+              </div>
+            </li>
+            <li class="accordion-navigation">
+              <a href="#panel3c">Accordion 3</a>
+              <div id="panel3c" class="content">
+                Panel 3. Lorem ipsum dolor
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p>Todo: Missing chevron icon</p>
     </div>
 
     <div class="panel">
@@ -45,8 +76,23 @@
       <p>Todo: add disabled styles</p>
     </div>
 
-
+    <div class="panel">
+      <h3 data-magellan-destination="banners">Banners</h3>
+      <a name="banners"></a>
+      <div class="eir-banner--large eir-banner">
+        <div class="eir-banner--text">
+          <h1>test</h1>
+          <h2>another</h2>
+        </div>
+      </div>
+      <div class="eir-banner--small eir-banner">
+        <div class="eir-banner--text">
+          <h1>test</h1>
+          <h2>another</h2>
+        </div>
+      </div>
+      <p>Todo: add disabled styles</p>
+    </div>
   </div>
-</body>
-
+ </body>
 </html>
