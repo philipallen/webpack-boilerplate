@@ -14,11 +14,11 @@
   }
 
   &.eir-banner--blue {
-    background: $blue;
+    background-color: $blue;
   }
   
   &.eir-banner--purple {
-    background: $purple;
+    background-color: $purple;
   }
 
   img.eir-background-img {
@@ -27,7 +27,7 @@
   }
 }
 
-@media only screen and (max-width: 40em) { //todo check foundation's media queries
+@media only screen and (max-width: $small-breakpoint) {
   .eir-banner__text{
     position: absolute;
     bottom: 0;
