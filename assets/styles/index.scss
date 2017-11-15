@@ -19,17 +19,25 @@ html {
   box-sizing: inherit;
 }
 
+.container {
+  margin-top: 88px;
+}
+
+.title-container {
+  position: fixed;
+  top: 0;
+}
+
 .title {
-  text-align: center;
+  font-weight: bold;
+  font-size: 23px;
+  margin-left: 10px;
 }
 
-.side-nav {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  max-width: 320px;
-}
-
-li {
-  list-style: none;
+.anchor-link {
+  position: relative;
+  top: -100px;
+  display: block;
+  height: 0;
+  width:0;
 }

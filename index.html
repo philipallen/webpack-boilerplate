@@ -11,60 +11,55 @@
 
 <body>
   <div class="container">
-    <h1 class="title">Eir Styleguide</h1>
-
-    <div data-magellan-expedition="fixed">
+    <div class="title-container" data-magellan-expedition="fixed">
       <dl class="sub-nav">
-        <dd data-magellan-arrival="accordion"><a href="#accordions">Accordions</a></dd>
-        <dd data-magellan-arrival="buttons"><a href="#buttons">Buttons</a></dd>
-        <dd data-magellan-arrival="inputs"><a href="#inputs">Inputs</a></dd>
-        <dd data-magellan-arrival="inputs"><a href="#banners">Banners</a></dd>
+        <div class="title">Eir Styleguide</div>
+        <dd><a href="#accordions">Accordions</a></dd>
+        <dd><a href="#buttons">Buttons</a></dd>
+        <dd><a href="#inputs">Inputs</a></dd>
+        <dd><a href="#banners">Banners</a></dd>
       </dl>
     </div>
 
     <div class="panel">
-      <a name="accordions"></a>
-      <h3 data-magellan-destination="accordion">Accordions</h3>
-      <ul class="eir-accordion">
-        <li>
-          <ul class="accordion" data-accordion="myAccordionGroup">
-            <li class="accordion-navigation">
-              <a href="#panel1c">Accordion 1</a>
-              <div id="panel1c" class="content">
-                Panel 1. Lorem ipsum dolor
-              </div>
-            </li>
-            <li class="accordion-navigation">
-              <a href="#panel2c">Accordion 2</a>
-              <div id="panel2c" class="content">
-                Panel 2. Lorem ipsum dolor
-              </div>
-            </li>
-            <li class="accordion-navigation">
-              <a href="#panel3c">Accordion 3</a>
-              <div id="panel3c" class="content">
-                Panel 3. Lorem ipsum dolor
-              </div>
-            </li>
-          </ul>
+      <a class="anchor-link" name="accordions"></a>
+      <h3>Accordions</h3>
+      <ul class="eir-accordion accordion" data-accordion="myAccordionGroup">
+        <li class="accordion-navigation">
+          <a href="#panel1c">Accordion 1</a>
+          <div id="panel1c" class="content">
+            Panel 1. Lorem ipsum dolor
+          </div>
+        </li>
+        <li class="accordion-navigation">
+          <a href="#panel2c">Accordion 2</a>
+          <div id="panel2c" class="content">
+            Panel 2. Lorem ipsum dolor
+          </div>
+        </li>
+        <li class="accordion-navigation">
+          <a href="#panel3c">Accordion 3</a>
+          <div id="panel3c" class="content">
+            Panel 3. Lorem ipsum dolor
+          </div>
         </li>
       </ul>
       <p>Todo: Missing chevron icon</p>
     </div>
 
     <div class="panel">
-      <a name="buttons"></a>
-      <h3 data-magellan-destination="buttons">Buttons</h3>
+      <a class="anchor-link" name="buttons"></a>
+      <h3>Buttons</h3>
       <p>Buttons styles to go here</p>
-      <a class="button eir-button eir-button--blue">Normal</a>
-      <a class="button eir-button eir-button--red">text is 20px</a>
-      <a class="button eir-button large eir-button--red">text is 28px</a>
+      <a class="eir-button button eir-button--blue">Normal</a>
+      <a class="eir-button button eir-button--red">text is 20px</a>
+      <a class="eir-button button large eir-button--red">text is 28px</a>
       <p>Todo: add disabled styles</p>
     </div>
 
     <div class="panel">
-      <a name="inputs"></a>
-      <h3 data-magellan-destination="inputs">Inputs</h3>
+      <a class="anchor-link" name="inputs"></a>
+      <h3>Inputs</h3>
       <label>
         <input class="eir-input eir-input--blue" type="text" placeholder="Click in to see blue border" />
       </label>
@@ -78,8 +73,8 @@
     </div>
 
     <div class="panel">
-      <a name="banners"></a>
-      <h3 data-magellan-destination="banners">Banners</h3>
+      <a class="anchor-link" name="banners"></a>
+      <h3>Banners</h3>
       <div class="eir-banner eir-banner--large eir-banner--blue">
         <div class="eir-banner__text">
           <h1>Heading</h1>
