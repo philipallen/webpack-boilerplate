@@ -3,6 +3,11 @@
   margin-bottom: 20px;
   padding: 15px;
   position: relative;
+  
+  img.eir-background-img {
+    height: 100%;
+    width: 100%;
+  }
 
   &.eir-banner--large {
     height: 716px;
@@ -21,10 +26,7 @@
     background-color: $purple;
   }
 
-  img.eir-background-img {
-    height: 100%;
-    width: 100%;
-  }
+  //....add more colours when required
 }
 
 @media only screen and (max-width: $small-breakpoint) {
