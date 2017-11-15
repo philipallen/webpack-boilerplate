@@ -1,0 +1,67 @@
+//typography styling controlled in _settings.scss for Eir Medium
+
+.eir-alt-font {
+  font-family: GT-Walsheim-Medium;
+
+  @at-root {
+    h1#{&} {
+      font-size: rem-calc(44);
+    }
+
+    h2#{&} {
+      font-size: rem-calc(32);
+    }
+    
+    h3#{&} {
+      font-size: rem-calc(28);
+    }
+
+    h4#{&} {
+      font-size: rem-calc(20);
+    }
+
+    h5#{&} {
+      font-size: rem-calc(16);
+    }
+
+    h6#{&} {
+      font-size: rem-calc(12);
+    }
+  }
+
+  &.text--regular {
+    font-family: GT-Walsheim-Regular;
+  }
+
+  &.text--bold {
+    font-family: GT-Walsheim-Bold;
+  }
+}
+
+@for $index from 1 through 6 {
+  h#{$index}{
+    &.text--blue {
+      color: $blue;
+    }
+
+    &.text--purple {
+      color: $purple;
+    }
+
+    &.text--pink {
+      color: $pink;
+    }
+    
+    &.text--red {
+      color: $red;
+    }
+    
+    &.text--yellow {
+      color: $yellow;
+    }
+    
+    &.text--lime {
+      color: $lime;
+    }
+  }
+}

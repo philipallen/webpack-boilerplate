@@ -8,6 +8,7 @@
 @import '_buttons.scss';
 @import '_accordions.scss';
 @import '_banners.scss';
+@import '_typography.scss';
 
 // Basic stuff
 html {
@@ -34,10 +35,18 @@ html {
   margin-left: 10px;
 }
 
+.panel-title {
+  padding-bottom: 20px;
+}
+
 .anchor-link {
   position: relative;
   top: -100px;
   display: block;
   height: 0;
   width:0;
+}
+
+.space-above {
+  margin-top: 40px;
 }
