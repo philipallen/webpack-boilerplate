@@ -38,16 +38,10 @@ const commonConfig = merge([
   parts.loadJavaScript({ include: PATHS.app }),
 ]);
 
-const addons = (addonsArg) => {
-  const listedAddons = [].concat.apply([], [addonsArg]).filter(Boolean);
-
-  return listedAddons.map(addonName => require(`./build-utils/addons/webpack.${addonName}.js`));
-};
-
 module.exports = (env) => {
   if (env === 'production') {
-    return merge(commonConfig, productionConfig, ...addons(env.addons));
+    return merge(commonConfig, productionConfig);
   }
 
-  return merge(commonConfig, developmentConfig, ...addons(env.addons));
+  return merge(commonConfig, developmentConfig);
 };
