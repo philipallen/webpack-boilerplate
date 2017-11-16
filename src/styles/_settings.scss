@@ -147,7 +147,7 @@ $dark-grey: #25262a;
 // We use these to control various global styles
 // $body-bg: $white;
 // $body-font-color: $jet;
-// $body-font-family: $font-family-sans-serif;
+$body-font-family: Eir-Medium-Web;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -241,12 +241,12 @@ $dark-grey: #25262a;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-// $h1-font-size: rem-calc(44);
-// $h2-font-size: rem-calc(37);
-// $h3-font-size: rem-calc(27);
-// $h4-font-size: rem-calc(23);
-// $h5-font-size: rem-calc(18);
-// $h6-font-size: 1rem;
+$h1-font-size: rem-calc(92);
+$h2-font-size: rem-calc(68);
+$h3-font-size: rem-calc(44);
+$h4-font-size: rem-calc(32);
+$h5-font-size: rem-calc(28);
+$h6-font-size: rem-calc(20);
 
 // We use these to control header size reduction on small screens
 // $h1-font-reduction: rem-calc(10);
@@ -470,7 +470,7 @@ $button-display: block;
 // $button-margin-bottom: rem-calc(20);
 
 // We use these to control button text styles.
-$button-font-family: Eir-Medium;
+$button-font-family: Eir-Medium-Web;
 // $button-font-color: $white;
 // $button-font-color-alt: $oil;
 // $button-font-tny: rem-calc(11);
@@ -486,8 +486,8 @@ $button-font-lrg: rem-calc(28px);
 // We use these to control button border styles.
 // $button-border-width: 0;
 // $button-border-style: solid;
-$button-bg-color: $blue;
-$button-bg-hover: $dark-blue;
+// $button-bg-color: $blue;
+// $button-bg-hover: $dark-blue;
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
 // $secondary-button-border-color: $secondary-button-bg-hover;
@@ -665,7 +665,7 @@ $button-bg-hover: $dark-blue;
 // $form-label-font-color: scale-color($black, $lightness: 30%);
 // $form-label-small-transform: capitalize;
 // $form-label-bottom-margin: 0;
-$input-font-family: Eir-Medium;
+$input-font-family: Eir-Medium-Web;
 // $input-bg-color: $white;
 // $input-focus-bg-color: scale-color($white, $lightness: -2%);
 // $input-focus-border-color: scale-color($white, $lightness: -40%);

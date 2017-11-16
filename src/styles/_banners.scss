@@ -4,34 +4,33 @@
   padding: 15px;
   position: relative;
 
+  img.eir-background-img {
+    height: 100%;
+    width: 100%;
+  }
+
   &.eir-banner--large {
-    background: $blue;
     height: 716px;
     // background-image:url('../images/sample-image.jpg'); //todo add image in later
   }
 
   &.eir-banner--small {
-    background: $purple;
     height: 356px;
   }
 
-  img.eir-background-img {
-    height: 100%;
-    width: 100%;
+  &.eir-banner--blue {
+    background-color: $blue;
   }
+
+  &.eir-banner--purple {
+    background-color: $purple;
+  }
+
+  //....add more colours when required
 }
 
-.eir-circle {
-     width: 50px;
-     height: 50px;
-     -webkit-border-radius: 25px;
-     -moz-border-radius: 25px;
-     border-radius: 25px;
-     background: $green;
-}
-
-@media only screen and (max-width: 40em) {
-  .eir-banner--text{
+@media only screen and (max-width: $small-breakpoint) {
+  .eir-banner__text {
     position: absolute;
     bottom: 0;
     width: 100%;
