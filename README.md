@@ -1,7 +1,9 @@
 #Eir Styleguide
 ===============
 
-## osx users:
+## Setup
+
+### osx users:
 
 Run this in the root of your Teminal:
 
@@ -14,7 +16,7 @@ Run this in the root of your Teminal:
 )
 ```
 
-## windows users:
+### windows users:
 
 Run this in the root of your command shell:
 
@@ -24,10 +26,14 @@ Run this in the root of your command shell:
 
 > install-peerdeps --dev eslint-config-airbnb
 
+### all users
 
-You need an .eslintrc file on your root too.
-On Windows this is here: C:\Users\%username%
-On osx this is on your root.
+You'll need to create an .eslintrc file.
+
+On Windows you should create it here: C:\Users\%username%
+
+On osx create it on your root
+
 Copy and paste the below into the .eslintrc file
 
 ```
@@ -46,7 +52,7 @@ Copy and paste the below into the .eslintrc file
 ```
 
 
-To start the project:
+## To start the project:
 
 > npm install (first time only)
 
