@@ -12,7 +12,5 @@ $(document).ready(() => {
     this.global.namespace = '';
   };
 
-  console.log(andrew);
-
   $(document).foundation();
 });

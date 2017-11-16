@@ -5,7 +5,8 @@
   "author": "andrew caulfield",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dashboard -- webpack-dev-server --quiet --colors --hot --inline --env development",
+    "dev":
+      "webpack-dashboard  -c -- webpack-dev-server --quiet --colors --hot --inline --env development",
     "build": "webpack --env production",
     "debug": "node --inspect --debug-brk ./node_modules/webpack/bin/webpack.js",
     "webpack": "node ./node_modules/webpack/bin/webpack.js",
