@@ -11,7 +11,7 @@
     h2#{&} {
       font-size: rem-calc(32);
     }
-    
+
     h3#{&} {
       font-size: rem-calc(28);
     }
@@ -39,7 +39,7 @@
 }
 
 @for $index from 1 through 6 {
-  h#{$index}{
+  h#{$index} {
     &.text--blue {
       color: $blue;
     }
@@ -51,15 +51,15 @@
     &.text--pink {
       color: $pink;
     }
-    
+
     &.text--red {
       color: $red;
     }
-    
+
     &.text--yellow {
       color: $yellow;
     }
-    
+
     &.text--lime {
       color: $lime;
     }

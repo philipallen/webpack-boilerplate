@@ -1,105 +1,53 @@
 const path = require('path');
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const merge = require('webpack-merge');
+const parts = require('./build-utils/webpack.parts');
 
-// Is the current build a development build
-const IS_DEV = process.env.NODE_ENV === 'dev';
+const productionConfig = require('./build-utils/webpack.prod');
+const developmentConfig = require('./build-utils/webpack.dev');
 
-const dirNode = 'node_modules';
-const dirApp = path.join(__dirname, 'app');
-const dirAssets = path.join(__dirname, 'assets');
+const PATHS = {
+  app: path.join(__dirname, 'src'),
+  build: path.join(__dirname, 'dist'),
+};
 
-const appHtmlTitle = 'Webpack Boilerplate';
-
-/**
- * Webpack Configuration
- */
-module.exports = {
-  entry: {
-    vendor: ['lodash'],
-    bundle: path.join(dirApp, 'index'),
-  },
-  resolve: {
-    modules: [dirNode, dirApp, dirAssets],
-  },
-  plugins: [
-    new webpack.DefinePlugin({
-      IS_DEV,
-    }),
-
-    new webpack.ProvidePlugin({
-      // lodash
-      _: 'lodash',
-      $: "jquery",
-      jQuery: "jquery"
-    }),
-
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'index.html'),
-      title: appHtmlTitle,
-    }),
-  ],
-  module: {
-    rules: [
-      // BABEL
-      {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /(node_modules)/,
-        options: {
-          compact: true,
-        },
-      },
-
-      // STYLES
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: IS_DEV,
-            },
-          },
-        ],
-      },
-
-      // CSS / SASS
-      {
-        test: /\.scss/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: IS_DEV,
-            },
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: IS_DEV,
-              includePaths: [dirAssets],
-            },
-          },
-        ],
-      },
-
-      // IMAGES
-      {
-        test: /\.(jpe*g|png|gif)$/,
-        loader: 'file-loader',
-        options: {
-          name: '[path][name].[ext]',
-        },
-      },
-
-      // FONTS
-      { 
-        test: /\.(png|woff|woff2|eot|ttf|svg)$/, 
-        loader: 'url-loader?limit=100000' 
-      }
+const commonConfig = merge([
+  {
+    entry: {
+      app: PATHS.app,
+    },
+    output: {
+      path: PATHS.build,
+      filename: '[name].js',
+    },
+    plugins: [
+      new HtmlWebpackPlugin({
+        title: 'Eir Styleguide Dev',
+        inject: true,
+        template: path.resolve(__dirname, './index.html'),
+      }),
     ],
   },
+  parts.lintJavaScript({ include: PATHS.app }),
+  parts.loadFonts({
+    options: {
+      name: '[name].[hash:8].[ext]',
+    },
+  }),
+
+  parts.loadJavaScript({ include: PATHS.app }),
+]);
+
+const addons = (addonsArg) => {
+  const listedAddons = [].concat.apply([], [addonsArg]).filter(Boolean);
+
+  return listedAddons.map(addonName => require(`./build-utils/addons/webpack.${addonName}.js`));
+};
+
+module.exports = (env) => {
+  if (env === 'production') {
+    return merge(commonConfig, productionConfig, ...addons(env.addons));
+  }
+
+  return merge(commonConfig, developmentConfig, ...addons(env.addons));
 };

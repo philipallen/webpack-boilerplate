@@ -1,8 +1,6 @@
-// Foundation styles
 @import '_settings.scss';
 @import '../../node_modules/foundation-sites/scss/foundation.scss';
 
-// eir styles
 @import '_fonts.scss';
 @import '_inputs.scss';
 @import '_buttons.scss';
@@ -10,10 +8,10 @@
 @import '_banners.scss';
 @import '_typography.scss';
 
-// Basic stuff
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -45,7 +43,7 @@ html {
   top: -100px;
   display: block;
   height: 0;
-  width:0;
+  width: 0;
 }
 
 .space-above {
