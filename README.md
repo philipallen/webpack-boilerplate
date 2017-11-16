@@ -20,7 +20,9 @@ Run this in the root of your command shell:
 
 > npm install -g eslint
 
-> npm install -g install-peerdeps install-peerdeps --dev eslint-config-airbnb
+> npm install -g install-peerdeps
+
+> install-peerdeps --dev eslint-config-airbnb
 
 
 You need an .eslintrc file on your root too.

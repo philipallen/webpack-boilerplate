@@ -1,0 +1,4 @@
+.nav { margin-bottom: 0; }
+.nav > li.dropdown.open { position: static; }
+ul.dropdown.open {display:block; width: 100% !important;  }
+.dropdown-menu>li { display: block; }
