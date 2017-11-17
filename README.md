@@ -1,11 +1,10 @@
-#Eir Styleguide
-===============
+# Webpack Boilerplate
 
 ## Setup
 
 ### osx users:
 
-Run this in the root of your Teminal:
+Run these in the root of your Teminal:
 
 > npm install -g eslint
 
@@ -18,7 +17,7 @@ Run this in the root of your Teminal:
 
 ### windows users:
 
-Run this in the root of your command shell:
+Run these anywhere in your command shell:
 
 > npm install -g eslint
 
@@ -51,9 +50,14 @@ Copy and paste the below into the .eslintrc file
  }
 ```
 
-
-## To start the project:
+## To start the project in development mode:
 
 > npm install (first time only)
 
 > npm run dev
+
+## To build in production:
+
+> npm run build
+
+See the dist folder has been created with all the relevant bundles inside

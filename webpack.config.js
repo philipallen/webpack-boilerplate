@@ -22,7 +22,7 @@ const commonConfig = merge([
     },
     plugins: [
       new HtmlWebpackPlugin({
-        title: 'Eir Styleguide Dev',
+        title: 'Webpack Boilerplate',
         inject: true,
         template: path.resolve(__dirname, './index.html'),
       }),

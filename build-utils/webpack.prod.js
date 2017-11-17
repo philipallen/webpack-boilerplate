@@ -11,9 +11,6 @@ const PATHS = {
 
 const productionConfig = merge([
   {
-    entry: {
-      vendor: ['react'],
-    },
     output: {
       chunkFilename: '[name].[chunkhash:8].js',
       filename: '[name].[chunkhash:8].js',
